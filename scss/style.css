@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #030303;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 240px;
+}
+
+.header a {
+  color: #FFF;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+.header__list {
+  display: flex;
+  gap: 55px;
+}
+.header__list li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.09em;
+}
+.header__logo {
+  display: flex;
+  gap: 25px;
+}
+.header__title {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

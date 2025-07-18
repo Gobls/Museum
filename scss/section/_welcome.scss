@@ -1,0 +1,42 @@
+.welcome {
+    .container {
+        height: 810px;
+        background-image:
+            linear-gradient(to right,
+                rgba(0, 0, 0, 1) 40%,
+                rgba(0, 0, 0, 0) 60%
+            ),
+            url(/assets/img/welcome-slider/1.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    &__btn {
+        display: flex;
+        width: 360px;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: "Forum", sans-serif;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 112%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 25px;
+        padding-top: 150px;
+    }
+
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        letter-spacing: 0.07em;
+        color: $white;
+        padding-bottom: 75px;
+    }
+}

@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>LOUVRE</title>
 </head>
 
@@ -17,7 +22,7 @@
                         <img src="assets/img/logo.svg" alt="logo">
                     </picture>
                 </div>
-                <div class="header__title">LOUVRE</div>
+                <h1>LOUVRE</h1>
             </a>
             <nav class="header__menu">
                 <ul class="header__list">
@@ -47,44 +52,271 @@
     <main class="main">
         <section class="welcome">
             <div class="container">
-
+                <div class="welcome__title">
+                    <h2>welcome <br> to the louvre</h2>
+                </div>
+                <div class="welcome__text">
+                    From the castle to the museum
+                </div>
+                <div class="welcome__wrapper-btn">
+                    <a href="/" class="btn welcome__btn">Discover the Louvre</a>
+                </div>
             </div>
-
         </section>
         <section class="visiting">
             <div class="container">
-
+                <h2>virtual tour</h2>
+                <div class="visiting__line"></div>
+                <div class="cards">
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/Rectangle.jpg" alt="logo">
+                        </picture>
+                        <h3>royal palace</h3>
+                        <div class="visiting__line">
+                        </div>
+                        <p>360 Virtual Tour <br> Google Street Panorama View</p>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/Rectangle.jpg" alt="logo">
+                        </picture>
+                        <h3>denon wing</h3>
+                        <div class="line visiting__line">
+                        </div>
+                        <p>360 Virtual Tour <br> Google Street Panorama View</p>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/Rectangle.jpg" alt="logo">
+                        </picture>
+                        <h3>Colonnade Perrault</h3>
+                        <div class="visiting__line">
+                        </div>
+                        <p>360 Virtual Tour <br> Google Street Panorama View</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/Rectangle.jpg" alt="logo">
+                        </picture>
+                        <h3>Greek hall</h3>
+                        <div class="line visiting__line"></div>
+                        <p>360 Virtual Tour <br> Google Street Panorama View</p>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/Rectangle.jpg" alt="logo">
+                        </picture>
+                        <h3>Mona Lisa</h3>
+                        <div class="visiting__line"></div>
+                        <p>360 Virtual Tour <br> Google Street Panorama View</p>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/Rectangle.jpg" alt="logo">
+                        </picture>
+                        <h3>Night Palace</h3>
+                        <div class="visiting__line"></div>
+                        <p>360 Virtual Tour <br> Google Street Panorama View</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="explore">
             <div class="container">
-
+                <div class="cards">
+                    <div class="card">
+                        <h2>Picture explore</h2>
+                        <div class="line"></div>
+                        <div class="explore__text">
+                            <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish
+                                Golden Age.</p>
+                            <p>It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the
+                                previous restoration in the 19th century.</p>
+                            <p>The cleaning provoked furious protests, not because the picture had been damaged in any
+                                way, but because it looked different.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/explore-slider/before.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="video">
             <div class="container">
-
+                <div class="cards">
+                    <div class="card">
+                        <h2>Video journey</h2>
+                    </div>
+                    <div class="card">
+                        <p>Enter and visit one of the most famous museums in the world and enjoy <br> masterpieces such
+                            as
+                            Mona Lisa or Hammurabi's Code</p>
+                    </div>
+                </div>
+                <div class="video__main">
+                    <video controls poster="assets/video/poster0.jpg">
+                        <source src="assets/video/video0.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="cards">
+                    <div class="card video__slider">
+                        <video controls poster="assets/video/poster1.jpg">
+                            <source src="assets/video/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card video__slider">
+                        <video controls poster="assets/video/poster2.jpg">
+                            <source src="assets/video/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card video__slider">
+                        <video controls poster="assets/video/poster3.jpg">
+                            <source src="assets/video/video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="gallery">
             <div class="container">
-
+                <h2>Art Gallery</h2>
+                <div class="cards">
+                    <div class="card indentation">
+                        <picture>
+                            <img src="assets/img/galery/galery2.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery9.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery4.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery6.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/galery/galery1.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery8.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery3.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery5.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="card indentation">
+                        <picture>
+                            <img src="assets/img/galery/galery7.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery10.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery15.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img src="assets/img/galery/galery12.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="tickets">
             <div class="container">
-
+                <h2>BUY TICKETS</h2>
+                <div class="line"></div>
+                <div class="cards">
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/tickets.png" alt="">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </section>
+        <div class="parallax">
+            <picture>
+                <img src="assets/img/parallax1.png" alt="">
+            </picture>
+        </div>
         <section class="contacts">
             <div class="container">
-
+                <h2>Contacts</h2>
+                <div class="line"></div>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Palais Royal <br> Musee du Louvre</h3>
+                        <p>address: 75001 Paris, France</p>
+                        <p>phone: +33(0) 1 40 20 50 50</p>
+                        <p>mail: info@louvre.fr</p>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer class="footer">
+        <div class="container">
+            <a href="/" class="footer__logo">
+                <div class="footer__logo-svg">
+                    <picture>
+                        <img src="assets/img/logo.svg" alt="logo">
+                    </picture>
+                </div>
+                <h1>LOUVRE</h1>
+            </a>
+            <nav class="footer__menu">
+                <ul class="footer__list">
+                    <li>
+                        <a href="">Visiting</a>
+                    </li>
+                    <li>
+                        <a href="">Explore</a>
+                    </li>
+                    <li>
+                        <a href="">Video</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li>
+                        <a href="">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="">Tickets</a>
+                    </li>
+                    <li>
+                        <a href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__icons">
+
+            </div>
+            <div class="line"></div>
+            <div class="cards">
+                <div class="card">
+                    <p>© 2021</p>
+                </div>
+                <div class="card">
+                    <p>The Rolling Scopes School</p>
+                </div>
+                <div class="card">
+                    <p>Gobls</p>
+                </div>
+            </div>
+        </div>
 
     </footer>
 </body>

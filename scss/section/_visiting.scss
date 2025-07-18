@@ -1,0 +1,35 @@
+.visiting {
+    background-color: $white;
+
+    .container {
+        height: 1116px;
+        padding: 75px 0;
+    }
+
+    picture{
+        padding-bottom: 25px;
+    }
+
+    h2 {
+        color: $font-gold;
+    }
+    .cards{
+        padding-bottom: 75px;
+    }
+    .card {
+        width: 440px;
+        height: 424px;
+        .visiting {
+            &__line {
+                width: 300px;
+                height: 2px;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    &__line {
+        margin-bottom: 75px;
+        margin-top: 25px;
+    }
+}

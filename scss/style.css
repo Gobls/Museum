@@ -4,13 +4,83 @@ body {
   background-color: #030303;
 }
 
+h1 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FFF;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFF;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  color: #000;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+}
+
+.line {
+  background: #710707;
+  height: 3px;
 }
 
 .container {
   width: 1440px;
   margin: 0 240px;
+}
+
+.btn {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  background-color: #710707;
+  color: #FFF;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.indentation {
+  padding-top: 50px;
 }
 
 .header a {
@@ -36,10 +106,216 @@ a {
   display: flex;
   gap: 25px;
 }
-.header__title {
+
+.welcome .container {
+  height: 810px;
+  background-image: linear-gradient(to right, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%), url(/assets/img/welcome-slider/1.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.welcome__btn {
+  display: flex;
+  width: 360px;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+.welcome__title {
   font-family: "Forum", sans-serif;
   font-weight: 400;
-  font-size: 28px;
-  letter-spacing: 0.18em;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #FFF;
+  padding-bottom: 25px;
+  padding-top: 150px;
+}
+.welcome__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 0.07em;
+  color: #FFF;
+  padding-bottom: 75px;
+}
+
+.visiting {
+  background-color: #FFF;
+}
+.visiting .container {
+  height: 1116px;
+  padding: 75px 0;
+}
+.visiting picture {
+  padding-bottom: 25px;
+}
+.visiting h2 {
+  color: #9d8665;
+}
+.visiting .cards {
+  padding-bottom: 75px;
+}
+.visiting .card {
+  width: 440px;
+  height: 424px;
+}
+.visiting .card .visiting__line {
+  width: 300px;
+  height: 2px;
+  margin: 10px 0;
+}
+.visiting__line {
+  margin-bottom: 75px;
+  margin-top: 25px;
+}
+
+.explore .container {
+  height: 715px;
+  padding: 75px 0;
+}
+.explore .cards {
+  gap: 20px;
+}
+.explore__text p {
+  color: #FFF;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 175%;
+  padding-bottom: 25px;
+}
+.explore .line {
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.gallery .container {
+  z-index: 10;
+  height: 2155px;
+  overflow: hidden;
+  padding-top: 75px;
+}
+.gallery .cards {
+  position: relative;
+}
+.gallery .cards::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, #000 0%, #000 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+}
+.gallery picture {
+  padding-bottom: 24px;
+}
+.gallery h2 {
+  padding-bottom: 75px;
+}
+
+.video {
+  background-color: #FFF;
+}
+.video .container {
+  height: 1246px;
+  padding: 75px 0;
+}
+.video h2 {
+  color: #9d8665;
+}
+.video p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 175%;
+}
+.video__main {
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
+.video__main video {
+  width: 1440px;
+  height: 735px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video__slider {
+  width: 452px;
+  height: 254px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tickets {
+  background: #FFF;
+}
+.tickets .container {
+  height: 743px;
+  padding: 75px 0;
+}
+.tickets h2 {
+  color: #9d8665;
+}
+.tickets .line {
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.parallax {
+  width: 100%;
+  height: 400px;
+}
+.parallax img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.contacts {
+  background: #FFF;
+}
+.contacts .container {
+  height: 813px;
+  padding: 75px 0;
+}
+.contacts h2 {
+  color: #9d8665;
+}
+.contacts .line {
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+.contacts .card h3 {
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 28px;
+  padding-bottom: 50px;
+}
+.contacts .card p {
+  font-weight: 300;
+  font-size: 22px;
+  padding-bottom: 25px;
+}
+
+.footer .container {
+  height: 392px;
+}
+.footer .line {
+  background: #666;
+}
+.footer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0.09em;
+  color: #fff;
+}
+.footer .cards {
+  padding-top: 50px;
 }/*# sourceMappingURL=style.css.map */

@@ -83,6 +83,82 @@ a {
   padding-top: 50px;
 }
 
+.dot-checkboxes label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.dot-checkboxes input {
+  position: absolute;
+  opacity: 0;
+}
+
+.dot {
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.dot-checkboxes input:checked ~ .dot {
+  background-color: #000;
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.black-outline-counter {
+  display: inline-flex;
+  width: 142px;
+  height: 42px;
+  border: 4px solid #000;
+  background: white;
+  overflow: hidden;
+}
+
+.outline-counter-btn {
+  width: 40px;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.outline-counter-btn:hover {
+  background: #f0f0f0;
+}
+
+.outline-counter-btn:active {
+  background: #e0e0e0;
+}
+
+.outline-counter-input {
+  flex: 1;
+  background: white;
+  color: black;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  -moz-appearance: textfield;
+  padding: 0;
+}
+
+.outline-counter-input::-webkit-outer-spin-button,
+.outline-counter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .header a {
   color: #FFF;
 }
@@ -107,11 +183,71 @@ a {
   gap: 25px;
 }
 
+.footer .container {
+  height: 392px;
+}
+.footer .line {
+  background: #666;
+}
+.footer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0.09em;
+  color: #fff;
+}
+.footer .cards {
+  padding: 50px 0px;
+  justify-content: left;
+}
+.footer__menu {
+  display: flex;
+  gap: 150px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 0;
+}
+.footer__list li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  color: #FFF;
+}
+.footer__logo {
+  padding-top: 25px;
+  padding-right: 145px;
+  display: flex;
+  gap: 25px;
+}
+.footer__icons {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  padding-left: 397px;
+}
+.footer .line {
+  width: 1920px;
+  margin-left: -240px;
+}
+.footer__down {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 50px;
+}
+
 .welcome .container {
   height: 810px;
   background-image: linear-gradient(to right, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%), url(/assets/img/welcome-slider/1.jpg);
   background-repeat: no-repeat;
   background-position: right top;
+  position: relative;
 }
 .welcome__btn {
   display: flex;
@@ -138,6 +274,12 @@ a {
   letter-spacing: 0.07em;
   color: #FFF;
   padding-bottom: 75px;
+}
+.welcome__slider {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
 }
 
 .visiting {
@@ -246,6 +388,11 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.video__slider__pagination {
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+}
 
 .tickets {
   background: #FFF;
@@ -253,13 +400,73 @@ a {
 .tickets .container {
   height: 743px;
   padding: 75px 0;
+  position: relative;
+}
+.tickets .cards {
+  justify-content: left;
 }
 .tickets h2 {
   color: #9d8665;
 }
+.tickets h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000;
+  letter-spacing: 0.06em;
+  padding-bottom: 25px;
+}
 .tickets .line {
   margin-top: 25px;
   margin-bottom: 75px;
+}
+.tickets__checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 25px;
+  justify-content: left;
+}
+.tickets p {
+  font-weight: 300;
+  font-size: 22px;
+  padding-left: 23px;
+}
+.tickets label {
+  display: flex;
+  align-items: center;
+}
+.tickets__buy {
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+.tickets__buy p {
+  padding-left: 0;
+  padding-bottom: 15px;
+}
+.tickets__total {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.tickets__total h3 {
+  text-transform: none;
+}
+.tickets__btn {
+  border-radius: 2px;
+  width: 175px;
+  height: 50px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tickets__center {
+  padding-left: 60px;
+  padding-right: 235px;
+}
+.tickets__right {
+  display: flex;
+  justify-content: right;
 }
 
 .parallax {
@@ -300,22 +507,4 @@ a {
   font-weight: 300;
   font-size: 22px;
   padding-bottom: 25px;
-}
-
-.footer .container {
-  height: 392px;
-}
-.footer .line {
-  background: #666;
-}
-.footer p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 22px;
-  line-height: 100%;
-  letter-spacing: 0.09em;
-  color: #fff;
-}
-.footer .cards {
-  padding-top: 50px;
 }/*# sourceMappingURL=style.css.map */

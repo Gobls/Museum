@@ -30,5 +30,11 @@
         width: 452px;
         height: 254px;
         object-fit: cover;
+
+        &__pagination{
+            display: flex;
+            padding-top: 40px;
+            justify-content: center;
+        }
     }
 }

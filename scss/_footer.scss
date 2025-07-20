@@ -1,0 +1,72 @@
+.footer {
+    .container {
+        height: 392px;
+    }
+
+    .line {
+        background: #666;
+    }
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0.09em;
+        color: #fff;
+    }
+
+    .cards {
+        padding: 50px 0px;
+        justify-content: left;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 150px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 0;
+        padding-top: 25px;
+        padding-left: 0;
+
+        li {
+            a {
+                font-family: "Roboto", sans-serif;
+                font-weight: 100;
+                font-size: 22px;
+                letter-spacing: 0.09em;
+                color: $white;
+            }
+        }
+    }
+
+    &__logo {
+        padding-top: 25px;
+        padding-right: 145px;
+        display: flex;
+        gap: 25px;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: flex-end;
+        gap: 25px;
+        padding-left: 397px;
+    }
+
+    .line {
+        width: 1920px;
+        margin-left: -240px;
+    }
+
+    &__down{
+        justify-content: space-between;
+        display: flex;
+        padding-top: 50px;
+    }
+}

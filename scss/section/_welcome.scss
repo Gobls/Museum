@@ -9,6 +9,7 @@
             url(/assets/img/welcome-slider/1.jpg);
         background-repeat: no-repeat;
         background-position: right top;
+        position: relative;
     }
 
     &__btn {
@@ -38,5 +39,12 @@
         letter-spacing: 0.07em;
         color: $white;
         padding-bottom: 75px;
+    }
+
+    &__slider{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
     }
 }

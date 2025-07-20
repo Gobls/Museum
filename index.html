@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -60,6 +60,11 @@
                 </div>
                 <div class="welcome__wrapper-btn">
                     <a href="/" class="btn welcome__btn">Discover the Louvre</a>
+                </div>
+                <div class="welcome__slider">
+                    <picture>
+                        <img src="assets/img/Slider pagination.png" alt="logo">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -181,6 +186,11 @@
                         </video>
                     </div>
                 </div>
+                <div class="video__slider__pagination">
+                    <picture>
+                        <img src="assets/img/video slider pagination.png" alt="logo">
+                    </picture>
+                </div>
             </div>
         </section>
         <section class="gallery">
@@ -242,6 +252,53 @@
                             <img src="assets/img/tickets.png" alt="">
                         </picture>
                     </div>
+                    <div class="card tickets__center">
+                        <h3>Ticket Type</h3>
+                        <div class="tickets__checkbox dot-checkboxes">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span class="dot"></span>
+                                <p>Permanent exhibition</p>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span class="dot"></span>
+                                <p>Temporary exhibition</p>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span class="dot"></span>
+                                <p>Combined Admission</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="tickets__right">Amount</h3>
+                        <div class="tickets__buy">
+                            <p>Basic 18+</p>
+                            <div class="black-outline-counter">
+                                <button class="outline-counter-btn minus">−</button>
+                                <input type="number" class="outline-counter-input" value="1" min="1" max="10">
+                                <button class="outline-counter-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="tickets__buy">
+                            <p>Senior 65+</p>
+                            <div class="black-outline-counter">
+                                <button class="outline-counter-btn minus">−</button>
+                                <input type="number" class="outline-counter-input" value="1" min="1" max="10">
+                                <button class="outline-counter-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="tickets__total tickets__right">
+                            <h3>Total €220</h3>
+                        </div>
+                        <div class="tickets__wrapper-btn">
+                            <a href="/" class="btn tickets__btn">Buy Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -261,6 +318,11 @@
                         <p>phone: +33(0) 1 40 20 50 50</p>
                         <p>mail: info@louvre.fr</p>
                     </div>
+                    <div class="card">
+                        <picture>
+                            <img src="assets/img/map.png" alt="">
+                        </picture>
+                    </div>
                 </div>
             </div>
         </section>
@@ -269,43 +331,60 @@
 
     <footer class="footer">
         <div class="container">
-            <a href="/" class="footer__logo">
-                <div class="footer__logo-svg">
+            <div class="cards">
+                <a href="/" class="footer__logo">
+                    <div class="footer__logo-svg">
+                        <picture>
+                            <img src="assets/img/logo.svg" alt="logo">
+                        </picture>
+                    </div>
+                    <h1>LOUVRE</h1>
+                </a>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">Visiting</a>
+                        </li>
+                        <li>
+                            <a href="">Explore</a>
+                        </li>
+                        <li>
+                            <a href="">Video</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="">Tickets</a>
+                        </li>
+                        <li>
+                            <a href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__icons">
                     <picture>
-                        <img src="assets/img/logo.svg" alt="logo">
+                        <img src="assets/icons/Youtube.svg" alt="">
+                    </picture>
+                    <picture>
+                        <img src="assets/icons/Instagram.svg" alt="">
+                    </picture>
+                    <picture>
+                        <img src="assets/icons/Facebook.svg" alt="">
+                    </picture>
+                    <picture>
+                        <img src="assets/icons/Twitter.svg" alt="">
+                    </picture>
+                    <picture>
+                        <img src="assets/icons/Pinterest.svg" alt="">
                     </picture>
                 </div>
-                <h1>LOUVRE</h1>
-            </a>
-            <nav class="footer__menu">
-                <ul class="footer__list">
-                    <li>
-                        <a href="">Visiting</a>
-                    </li>
-                    <li>
-                        <a href="">Explore</a>
-                    </li>
-                    <li>
-                        <a href="">Video</a>
-                    </li>
-                </ul>
-                <ul class="footer__list">
-                    <li>
-                        <a href="">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="">Tickets</a>
-                    </li>
-                    <li>
-                        <a href="">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="footer__icons">
 
             </div>
             <div class="line"></div>
-            <div class="cards">
+            <div class="footer__down">
                 <div class="card">
                     <p>© 2021</p>
                 </div>

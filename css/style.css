@@ -244,7 +244,7 @@ a {
 
 .welcome .container {
   height: 810px;
-  background-image: linear-gradient(to right, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%), url(/assets/img/0.jpg);
+  background-image: linear-gradient(to right, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%), url(assets/img/0.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   position: relative;

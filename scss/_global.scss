@@ -148,3 +148,8 @@ a {
   height: 400px;
   width: 100vw;
 }
+
+.btn:hover{
+  background-color: $font-gold;
+  transition: all .5s ease;
+}

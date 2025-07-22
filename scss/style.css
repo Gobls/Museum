@@ -149,6 +149,11 @@ a {
   width: 100vw;
 }
 
+.btn:hover {
+  background-color: #9d8665;
+  transition: all 0.5s ease;
+}
+
 .header a {
   color: #FFF;
 }
@@ -484,6 +489,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.tickets__btn:hover {
+  color: #000;
 }
 .tickets__center {
   padding-left: 60px;

@@ -1,0 +1,67 @@
+.visiting {
+    background-color: $white;
+
+    .container {
+        height: 1116px;
+        padding: 75px 0;
+    }
+
+    picture {
+        padding-bottom: 25px;
+    }
+
+    h2 {
+        color: $font-gold;
+    }
+
+    .cards {
+        padding-bottom: 75px;
+    }
+
+    .card {
+        width: 440px;
+        height: 424px;
+    }
+
+    &__line {
+        margin-bottom: 75px;
+        margin-top: 25px;
+    }
+
+    &__hover {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+
+        .line {
+            width: 300px;
+            height: 2px;
+            margin: 10px 0;
+            transition: all 0.5s ease;
+        }
+
+        &:hover {
+            box-shadow: 10px 5px 5px $font-gold;
+            border-radius: 10px;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .visiting__line {
+                width: 100%;
+                background-color: $font-gold;
+            }
+
+            p {
+                color: $font-gold;
+                transition: color .5s ease;
+            }
+
+            h3 {
+                color: $font-gold;
+                transition: color .5s ease;
+            }
+        }
+    }
+}

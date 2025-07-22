@@ -1,0 +1,33 @@
+.contacts {
+    background: $white;
+
+    .container {
+        height: 813px;
+        padding: 75px 0;
+    }
+
+    h2 {
+        color: $font-gold;
+    }
+
+    .line {
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+
+    .card {
+        h3 {
+            font-family: "Roboto", sans-serif;
+            text-transform: none;
+            font-weight: 500;
+            font-size: 28px;
+            padding-bottom: 50px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 22px;
+            padding-bottom: 25px;
+        }
+    }
+}

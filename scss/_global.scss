@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $dark-bg;
+}
+
+h1 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  color: $black;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line {
+  background: $dark-red;
+  height: 3px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  background-color: $dark-red;
+  color: $white;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.indentation {
+  padding-top: 50px;
+}
+
+.black-outline-counter {
+  display: inline-flex;
+  width: 142px;
+  height: 42px;
+  border: 4px solid #000;
+  background: white;
+  overflow: hidden;
+}
+
+.outline-counter-btn {
+  width: 40px;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.outline-counter-btn:hover {
+  background: #f0f0f0;
+}
+
+.outline-counter-btn:active {
+  background: #e0e0e0;
+}
+
+.outline-counter-input {
+  flex: 1;
+  background: white;
+  color: black;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  -moz-appearance: textfield;
+  padding: 0;
+}
+
+.outline-counter-input::-webkit-outer-spin-button,
+.outline-counter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.parallax-section {
+  background-image: url('../assets/img/parallax.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100vw;
+}

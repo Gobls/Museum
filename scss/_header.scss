@@ -1,0 +1,29 @@
+.header{
+    a{
+        color: $white;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+
+    &__list{
+        display: flex;
+        gap: 55px;
+        li{
+            a{
+                font-family: "Roboto", sans-serif;
+                font-size: 20px;
+                font-weight: 200;
+                letter-spacing: 0.09em;
+            }
+        }
+    }
+
+    &__logo{
+        display: flex;
+        gap: 25px;
+    }
+}

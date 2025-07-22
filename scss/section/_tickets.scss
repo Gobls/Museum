@@ -1,0 +1,98 @@
+.tickets {
+    background: $white;
+
+    .container {
+        height: 743px;
+        padding: 75px 0;
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    .cards {
+        justify-content: left;
+    }
+
+    h2 {
+        color: $font-gold;
+    }
+
+    h3 {
+        font-family: "Roboto", sans-serif;
+        ;
+        font-weight: 700;
+        font-size: 28px;
+        color: #000;
+        letter-spacing: 0.06em;
+        padding-bottom: 25px;
+    }
+
+    .line {
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 22px;
+        padding-left: 23px;
+    }
+
+    &__radio {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        &-btn {
+            display: flex;
+            gap: 25px;
+        }
+
+        input[type="radio"] {
+            margin-right: 0;
+            accent-color: $black;
+            cursor: pointer;
+        }
+    }
+
+    &__buy {
+        padding-bottom: 10px;
+
+        p {
+            padding-left: 0;
+            padding-bottom: 15px;
+        }
+
+        padding-left: 25px
+    }
+
+    &__total {
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        h3 {
+            text-transform: none;
+        }
+    }
+
+    &__btn {
+        border-radius: 2px;
+        width: 175px;
+        height: 50px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__center {
+        padding-left: 60px;
+        padding-right: 235px;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: right;
+    }
+}

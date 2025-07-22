@@ -1,86 +1,86 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: $dark-bg;
+  margin: 0;
+  padding: 0;
+  background-color: $dark-bg;
 }
 
 h1 {
-    font-family: "Forum", sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: $white;
-    margin: 0;
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
 }
 
 h2 {
-    font-family: "Forum", sans-serif;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 112%;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white;
-    margin: 0;
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
 }
 
 h3 {
-    font-family: "Forum", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: $black;
-    margin: 0;
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0;
 }
 
 p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-size: 22px;
-    color: $black;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  color: $black;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .line {
-    background: $dark-red;
-    height: 3px;
+  background: $dark-red;
+  height: 3px;
 }
 
 .container {
-    width: 1440px;
-    margin: 0 240px;
+  width: 1440px;
+  margin: 0 240px;
 }
 
 .btn {
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: 0.09em;
-    background-color: $dark-red;
-    color: $white;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  background-color: $dark-red;
+  color: $white;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
 }
 
 .cards {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .indentation {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .dot-checkboxes label {
@@ -105,7 +105,7 @@ a {
   transition: all 0.3s;
 }
 
-.dot-checkboxes input:checked ~ .dot {
+.dot-checkboxes input:checked~.dot {
   background-color: #000;
   box-shadow: inset 0 0 0 3px white;
 }

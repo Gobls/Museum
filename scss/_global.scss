@@ -158,3 +158,13 @@ a {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.parallax-section {
+  background-image: url('../assets/img/parallax.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100vw;
+}

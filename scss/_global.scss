@@ -3,14 +3,12 @@ html {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: $dark-bg;
-
 }
 
 h1 {
@@ -63,7 +61,7 @@ a {
 
 .container {
   width: 1440px;
-  margin: 0 240px;
+  margin: 0 auto;
 }
 
 .btn {

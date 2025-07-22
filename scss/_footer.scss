@@ -4,7 +4,12 @@
     }
 
     .line {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
         background: #666;
+        width: 100vw;
     }
 
     p {
@@ -59,12 +64,7 @@
         padding-left: 397px;
     }
 
-    .line {
-        width: 1920px;
-        margin-left: -240px;
-    }
-
-    &__down{
+    &__down {
         justify-content: space-between;
         display: flex;
         padding-top: 50px;

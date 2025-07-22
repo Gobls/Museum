@@ -3,7 +3,6 @@ html {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 body {
@@ -62,7 +61,7 @@ a {
 
 .container {
   width: 1440px;
-  margin: 0 240px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -178,7 +177,12 @@ a {
   height: 392px;
 }
 .footer .line {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
   background: #666;
+  width: 100vw;
 }
 .footer p {
   font-family: "Roboto", sans-serif;
@@ -222,10 +226,6 @@ a {
   align-items: flex-end;
   gap: 25px;
   padding-left: 397px;
-}
-.footer .line {
-  width: 1920px;
-  margin-left: -240px;
 }
 .footer__down {
   justify-content: space-between;

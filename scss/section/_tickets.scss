@@ -33,24 +33,26 @@
         margin-bottom: 75px;
     }
 
-    &__checkbox {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        padding-top: 25px;
-        justify-content: left;
-    }
-
     p {
         font-weight: 300;
         font-size: 22px;
         padding-left: 23px;
     }
 
-    label {
+    &__radio {
         display: flex;
-        align-items: center;
-        gap: 23px;
+        flex-direction: column;
+        gap: 25px;
+
+        &-btn {
+            display: flex;
+            gap: 25px;
+        }
+
+        input[type="radio"] {
+            margin-right: 0;
+            accent-color: $black;
+        }
     }
 
     &__buy {

@@ -83,33 +83,6 @@ a {
   padding-top: 50px;
 }
 
-.dot-checkboxes label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
-
-.dot-checkboxes input {
-  position: absolute;
-  opacity: 0;
-}
-
-.dot {
-  display: inline-block;
-  left: 0;
-  top: 0;
-  width: 17px;
-  height: 17px;
-  border: 2px solid #000;
-  border-radius: 100%;
-  transition: all 0.3s;
-}
-
-.dot-checkboxes input:checked~.dot {
-  background-color: #000;
-  box-shadow: inset 0 0 0 3px white;
-}
-
 .black-outline-counter {
   display: inline-flex;
   width: 142px;

@@ -227,6 +227,9 @@ a {
   gap: 25px;
   padding-left: 397px;
 }
+.footer__icons img {
+  cursor: pointer;
+}
 .footer__down {
   justify-content: space-between;
   display: flex;

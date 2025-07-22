@@ -289,14 +289,39 @@ a {
   width: 440px;
   height: 424px;
 }
-.visiting .card .visiting__line {
-  width: 300px;
-  height: 2px;
-  margin: 10px 0;
-}
 .visiting__line {
   margin-bottom: 75px;
   margin-top: 25px;
+}
+.visiting__hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.visiting__hover .line {
+  width: 300px;
+  height: 2px;
+  margin: 10px 0;
+  transition: all 0.5s ease;
+}
+.visiting__hover:hover {
+  box-shadow: 10px 5px 5px #9d8665;
+  border-radius: 10px;
+}
+.visiting__hover:hover img {
+  border-radius: 10px;
+}
+.visiting__hover:hover .visiting__line {
+  width: 100%;
+  background-color: #9d8665;
+}
+.visiting__hover:hover p {
+  color: #9d8665;
+  transition: color 0.5s ease;
+}
+.visiting__hover:hover h3 {
+  color: #9d8665;
+  transition: color 0.5s ease;
 }
 
 .explore .container {

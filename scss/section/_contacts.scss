@@ -3,7 +3,6 @@
 
     .container {
         height: 813px;
-        padding: 75px 0;
     }
 
     h2 {
@@ -15,19 +14,39 @@
         margin-bottom: 75px;
     }
 
-    .card {
-        h3 {
-            font-family: "Roboto", sans-serif;
-            text-transform: none;
-            font-weight: 500;
-            font-size: 28px;
-            padding-bottom: 50px;
+    h3 {
+        font-family: "Roboto", sans-serif;
+        text-transform: none;
+        font-weight: 500;
+        font-size: 28px;
+        padding-bottom: 50px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+
+    @media(max-width:1024px) {
+        .container {
+            height: 614px;
         }
 
-        p {
-            font-weight: 300;
-            font-size: 22px;
-            padding-bottom: 25px;
+        img {
+            width: 694px;
+            height: 454px;
+            object-fit: cover;
+        }
+
+        h3 {
+            font-size: 24px;
+            padding-bottom: 35px;
+        }
+
+        p{
+            font-size: 20px;
+            padding-bottom: 15px;
         }
     }
 }

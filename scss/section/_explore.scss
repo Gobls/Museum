@@ -1,7 +1,6 @@
 .explore {
     .container {
         height: 715px;
-        padding: 75px 0;
     }
 
     .cards {
@@ -18,8 +17,26 @@
         }
     }
 
-    .line {
-        margin-top: 25px;
-        margin-bottom: 75px;
+    @media(max-width:1024px) {
+        .container {
+            padding: 60px 0;
+            height: 1029px;
+        }
+
+        .cards {
+            flex-direction: column;
+            row-gap: 62px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 192%;
+            padding-bottom: 0;
+        }
+
+        picture{
+            display: flex;
+            justify-content: center;
+        }
     }
 }

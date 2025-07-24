@@ -57,11 +57,14 @@ a {
 .line {
   background: #710707;
   height: 3px;
+  margin-bottom: 75px;
+  margin-top: 25px;
 }
 
 .container {
   width: 1440px;
   margin: 0 auto;
+  padding: 75px 0;
 }
 
 .btn {
@@ -154,6 +157,24 @@ a {
   transition: all 0.5s ease;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    width: 984px;
+    padding: 60px 0;
+  }
+  h2 {
+    font-size: 50px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+  }
+  .line {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+  .text-none {
+    display: none;
+  }
+}
 .header a {
   color: #FFF;
 }
@@ -162,6 +183,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 150px;
+  padding: 0;
 }
 .header__list {
   display: flex;
@@ -180,6 +202,7 @@ a {
 
 .footer .container {
   height: 392px;
+  padding: 0;
 }
 .footer .line {
   position: relative;
@@ -188,6 +211,7 @@ a {
   width: 100vw;
   background: #666;
   width: 100vw;
+  margin: 0;
 }
 .footer p {
   font-family: "Roboto", sans-serif;
@@ -240,6 +264,20 @@ a {
   display: flex;
   padding-top: 50px;
 }
+@media (max-width: 1024px) {
+  .footer .container {
+    height: 368px;
+  }
+  .footer__logo {
+    padding-right: 45px;
+  }
+  .footer__menu {
+    gap: 100px;
+  }
+  .footer__icons {
+    padding-left: 92px;
+  }
+}
 
 .welcome .container {
   height: 810px;
@@ -247,6 +285,7 @@ a {
   background-repeat: no-repeat;
   background-position: right top;
   position: relative;
+  padding: 0;
 }
 .welcome__btn {
   display: flex;
@@ -286,7 +325,6 @@ a {
 }
 .visiting .container {
   height: 1116px;
-  padding: 75px 0;
 }
 .visiting picture {
   padding-bottom: 25px;
@@ -295,15 +333,15 @@ a {
   color: #9d8665;
 }
 .visiting .cards {
-  padding-bottom: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 440px);
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 75px;
 }
 .visiting .card {
   width: 440px;
   height: 424px;
-}
-.visiting__line {
-  margin-bottom: 75px;
-  margin-top: 25px;
 }
 .visiting__hover {
   cursor: pointer;
@@ -323,7 +361,7 @@ a {
 .visiting__hover:hover img {
   border-radius: 10px;
 }
-.visiting__hover:hover .visiting__line {
+.visiting__hover:hover .line {
   width: 100%;
   background-color: #9d8665;
 }
@@ -335,10 +373,43 @@ a {
   color: #9d8665;
   transition: color 0.5s ease;
 }
+@media (max-width: 1024px) {
+  .visiting .container {
+    height: 1313px;
+  }
+  .visiting .cards {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    -moz-column-gap: 108px;
+         column-gap: 108px;
+    row-gap: 60px;
+  }
+  .visiting .card {
+    width: 330px;
+    height: 345px;
+  }
+  .visiting img {
+    width: 330px;
+    height: 215px;
+  }
+  .visiting h3 {
+    font-size: 28px;
+    letter-spacing: 0.11em;
+  }
+  .visiting p {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .visiting .visiting__hover .line {
+    width: 150px;
+  }
+  .visiting .visiting__hover:hover .line {
+    width: 330px;
+  }
+}
 
 .explore .container {
   height: 715px;
-  padding: 75px 0;
 }
 .explore .cards {
   gap: 20px;
@@ -350,19 +421,31 @@ a {
   line-height: 175%;
   padding-bottom: 25px;
 }
-.explore .line {
-  margin-top: 25px;
-  margin-bottom: 75px;
+@media (max-width: 1024px) {
+  .explore .container {
+    padding: 60px 0;
+    height: 1029px;
+  }
+  .explore .cards {
+    flex-direction: column;
+    row-gap: 62px;
+  }
+  .explore p {
+    font-size: 20px;
+    line-height: 192%;
+    padding-bottom: 0;
+  }
+  .explore picture {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .gallery .container {
   z-index: 10;
   height: 2155px;
   overflow: hidden;
-  padding-top: 75px;
-}
-.gallery .cards {
-  position: relative;
+  padding-bottom: 0;
 }
 .gallery .cards::after {
   content: "";
@@ -374,11 +457,27 @@ a {
   background: linear-gradient(to top, #000 0%, #000 50%, rgba(0, 0, 0, 0) 100%);
   z-index: 2;
 }
-.gallery picture {
-  padding-bottom: 24px;
+.gallery .cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+.gallery .card {
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 24px;
 }
 .gallery h2 {
   padding-bottom: 75px;
+}
+@media (max-width: 1024px) {
+  .gallery .container {
+    height: 1400px;
+  }
+  .gallery img {
+    width: 304px;
+  }
 }
 
 .video {
@@ -386,7 +485,6 @@ a {
 }
 .video .container {
   height: 1246px;
-  padding: 75px 0;
 }
 .video h2 {
   color: #9d8665;
@@ -417,13 +515,31 @@ a {
   padding-top: 40px;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .video .container {
+    height: 881px;
+  }
+  .video__main {
+    padding-top: 40px;
+  }
+  .video__main video {
+    width: 984px;
+    height: 504px;
+  }
+  .video__slider {
+    width: 300px;
+    height: 170px;
+  }
+  .video__slider__pagination {
+    padding-top: 40px;
+  }
+}
 
 .tickets {
   background: #FFF;
 }
 .tickets .container {
   height: 743px;
-  padding: 75px 0;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -442,10 +558,6 @@ a {
   color: #000;
   letter-spacing: 0.06em;
   padding-bottom: 25px;
-}
-.tickets .line {
-  margin-top: 25px;
-  margin-bottom: 75px;
 }
 .tickets p {
   font-weight: 300;
@@ -501,6 +613,17 @@ a {
   display: flex;
   justify-content: right;
 }
+@media (max-width: 1024px) {
+  .tickets .container {
+    height: 598px;
+  }
+  .tickets img {
+    width: 700px;
+    height: 440px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .parallax {
   width: 100%;
@@ -520,7 +643,6 @@ a {
 }
 .contacts .container {
   height: 813px;
-  padding: 75px 0;
 }
 .contacts h2 {
   color: #9d8665;
@@ -529,15 +651,34 @@ a {
   margin-top: 25px;
   margin-bottom: 75px;
 }
-.contacts .card h3 {
+.contacts h3 {
   font-family: "Roboto", sans-serif;
   text-transform: none;
   font-weight: 500;
   font-size: 28px;
   padding-bottom: 50px;
 }
-.contacts .card p {
+.contacts p {
   font-weight: 300;
   font-size: 22px;
   padding-bottom: 25px;
+}
+@media (max-width: 1024px) {
+  .contacts .container {
+    height: 614px;
+  }
+  .contacts img {
+    width: 694px;
+    height: 454px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contacts h3 {
+    font-size: 24px;
+    padding-bottom: 35px;
+  }
+  .contacts p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

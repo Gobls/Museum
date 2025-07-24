@@ -3,11 +3,7 @@
         z-index: 10;
         height: 2155px;
         overflow: hidden;
-        padding-top: 75px;
-    }
-
-    .cards {
-        position: relative;
+        padding-bottom: 0;
     }
 
     .cards::after {
@@ -24,11 +20,30 @@
         z-index: 2;
     }
 
-    picture {
-        padding-bottom: 24px;
+    .cards {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 36px;
+    }
+
+    .card {
+        display: grid;
+        grid-auto-rows: min-content;
+        gap: 24px;
     }
 
     h2 {
         padding-bottom: 75px;
+    }
+
+    @media(max-width:1024px) {
+        .container {
+            height: 1400px;
+        }
+
+        img {
+            width: 304px;
+        }
     }
 }

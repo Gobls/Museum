@@ -1,6 +1,7 @@
 .footer {
     .container {
         height: 392px;
+        padding: 0;
     }
 
     .line {
@@ -10,6 +11,7 @@
         width: 100vw;
         background: #666;
         width: 100vw;
+        margin: 0;
     }
 
     p {
@@ -62,7 +64,8 @@
         align-items: flex-end;
         gap: 25px;
         padding-left: 397px;
-        img{
+
+        img {
             cursor: pointer;
         }
     }
@@ -71,5 +74,23 @@
         justify-content: space-between;
         display: flex;
         padding-top: 50px;
+    }
+
+    @media(max-width:1024px) {
+        .container {
+            height: 368px;
+        }
+
+        &__logo {
+            padding-right: 45px;
+        }
+
+        &__menu {
+            gap: 100px;
+        }
+
+        &__icons {
+            padding-left: 92px;
+        }
     }
 }

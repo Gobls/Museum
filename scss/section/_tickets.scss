@@ -3,7 +3,6 @@
 
     .container {
         height: 743px;
-        padding: 75px 0;
         position: relative;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
@@ -26,11 +25,6 @@
         color: #000;
         letter-spacing: 0.06em;
         padding-bottom: 25px;
-    }
-
-    .line {
-        margin-top: 25px;
-        margin-bottom: 75px;
     }
 
     p {
@@ -84,7 +78,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        &:hover{
+
+        &:hover {
             color: $black;
         }
     }
@@ -97,5 +92,17 @@
     &__right {
         display: flex;
         justify-content: right;
+    }
+
+    @media(max-width:1024px) {
+        .container {
+            height: 598px;
+        }
+
+        img {
+            width: 700px;
+            height: 440px;
+            object-fit: cover;
+        }
     }
 }

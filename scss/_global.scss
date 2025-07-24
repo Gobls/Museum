@@ -57,11 +57,14 @@ a {
 .line {
   background: $dark-red;
   height: 3px;
+  margin-bottom: 75px;
+  margin-top: 25px;
 }
 
 .container {
   width: 1440px;
   margin: 0 auto;
+  padding: 75px 0;
 }
 
 .btn {
@@ -149,7 +152,29 @@ a {
   width: 100vw;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: $font-gold;
   transition: all .5s ease;
+}
+
+@media(max-width:1024px) {
+  .container {
+    width: 984px;
+    padding: 60px 0;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+  }
+
+  .line {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .text-none {
+    display: none;
+  }
 }

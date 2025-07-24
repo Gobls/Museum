@@ -3,7 +3,6 @@
 
     .container {
         height: 1116px;
-        padding: 75px 0;
     }
 
     picture {
@@ -15,17 +14,15 @@
     }
 
     .cards {
-        padding-bottom: 75px;
+        display: grid;
+        grid-template-columns: repeat(3, 440px);
+        column-gap: 60px;
+        row-gap: 75px;
     }
 
     .card {
         width: 440px;
         height: 424px;
-    }
-
-    &__line {
-        margin-bottom: 75px;
-        margin-top: 25px;
     }
 
     &__hover {
@@ -48,7 +45,7 @@
                 border-radius: 10px;
             }
 
-            .visiting__line {
+            .line {
                 width: 100%;
                 background-color: $font-gold;
             }
@@ -61,6 +58,53 @@
             h3 {
                 color: $font-gold;
                 transition: color .5s ease;
+            }
+        }
+    }
+
+    @media(max-width:1024px) {
+        .container {
+            height: 1313px;
+        }
+
+        .cards {
+            grid-template-columns: repeat(2, 330px);
+            justify-content: center;
+            column-gap: 108px;
+            row-gap: 60px;
+        }
+
+        .card {
+            width: 330px;
+            height: 345px;
+        }
+
+        img {
+            width: 330px;
+            height: 215px;
+        }
+
+        h3 {
+            font-size: 28px;
+            letter-spacing: 0.11em;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .visiting {
+            &__hover {
+                .line {
+                    width: 150px;
+                }
+
+                &:hover {
+                    .line {
+                        width: 330px;
+                    }
+                }
             }
         }
     }

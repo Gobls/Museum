@@ -19,7 +19,6 @@
 
     @media(max-width:1024px) {
         .container {
-            padding: 60px 0;
             height: 1029px;
         }
 
@@ -34,9 +33,24 @@
             padding-bottom: 0;
         }
 
-        picture{
+        picture {
             display: flex;
             justify-content: center;
+        }
+    }
+
+    @media(max-width:768px) {
+        .container {
+            height: 828px;
+        }
+
+        .cards {
+            row-gap: 0;
+        }
+
+        img {
+            width: 728px;
+            height: 705px;
         }
     }
 }

@@ -61,4 +61,32 @@
             }
         }
     }
+
+    @media(max-width:768px) {
+        .container {
+            height: 757px;
+        }
+
+        &__main {
+            padding-top: 20px;
+
+            video {
+                width: 728px;
+                height: 386px;
+            }
+        }
+
+        &__slider {
+            width: 354px;
+            height: 199px;
+
+            &__pagination {
+                padding-top: 20px;
+            }
+        }
+
+        &__none{
+            display: none;
+        }
+    }
 }

@@ -93,4 +93,18 @@
             padding-left: 92px;
         }
     }
+
+    @media(max-width:768px) {
+        .container {
+            height: 411px;
+        }
+
+        &__logo {
+            padding-right: 80px;
+        }
+
+        &__menu {
+            gap: 185px;
+        }
+    }
 }

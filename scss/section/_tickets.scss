@@ -105,4 +105,19 @@
             object-fit: cover;
         }
     }
+
+    @media(max-width:768px) {
+        .container {
+            height: 553px;
+        }
+
+        img {
+            width: 444px;
+            height: 340px;
+        }
+
+        &__total{
+            padding-bottom: 40px;
+        }
+    }
 }

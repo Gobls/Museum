@@ -199,6 +199,9 @@ img {
     line-height: 143%;
     letter-spacing: 0.18em;
   }
+  .text2-none {
+    display: none;
+  }
 }
 .header a {
   color: #FFF;
@@ -312,6 +315,30 @@ img {
   }
   .footer__menu {
     gap: 185px;
+  }
+}
+@media (max-width: 420px) {
+  .footer .container {
+    height: 400px;
+  }
+  .footer .cards {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0px;
+  }
+  .footer__logo {
+    padding: 0;
+  }
+  .footer__icons {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .footer__list li a {
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.12em;
   }
 }
 

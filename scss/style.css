@@ -5,6 +5,7 @@ html {
   display: flex;
   justify-content: center;
   font-size: 0.694444444vw;
+  overflow-x: hidden;
 }
 @media (min-width: 1440px) {
   html {
@@ -936,7 +937,7 @@ video {
   background: #FFF;
 }
 .contacts .container {
-  height: 81.3rem; /* 813px → 813/10 = 81.3rem */
+  height: 81.3rem;
 }
 .contacts h2 {
   color: #9d8665;
@@ -945,68 +946,68 @@ video {
   font-family: "Roboto", sans-serif;
   text-transform: none;
   font-weight: 500;
-  font-size: 2.8rem; /* 28px → 2.8rem */
-  padding-bottom: 5rem; /* 50px → 5rem */
+  font-size: 2.8rem;
+  padding-bottom: 5rem;
 }
 .contacts p {
   font-weight: 300;
-  font-size: 2.2rem; /* 22px → 2.2rem */
-  padding-bottom: 2.5rem; /* 25px → 2.5rem */
+  font-size: 2.2rem;
+  padding-bottom: 2.5rem;
 }
 @media (max-width: 1024px) {
   .contacts .container {
-    height: 61.4rem; /* 614px → 61.4rem */
+    height: 61.4rem;
   }
   .contacts img {
-    width: 69.4rem; /* 694px → 69.4rem */
-    height: 45.4rem; /* 454px → 45.4rem */
+    width: 69.4rem;
+    height: 45.4rem;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .contacts h3 {
-    font-size: 2.4rem; /* 24px → 2.4rem */
-    padding-bottom: 3.5rem; /* 35px → 3.5rem */
+    font-size: 2.4rem;
+    padding-bottom: 3.5rem;
   }
   .contacts p {
-    font-size: 2rem; /* 20px → 2rem */
-    padding-bottom: 1.5rem; /* 15px → 1.5rem */
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
   }
 }
 @media (max-width: 768px) {
   .contacts .container {
-    height: 81.8rem; /* 818px → 81.8rem */
+    height: 81.8rem;
   }
   .contacts img {
-    width: 72.8rem; /* 728px → 72.8rem */
-    height: 47.6rem; /* 476px → 47.6rem */
+    width: 72.8rem;
+    height: 47.6rem;
   }
   .contacts .cards {
     flex-direction: column;
   }
   .contacts h3 {
-    font-size: 2rem; /* 20px → 2rem */
-    padding-bottom: 4rem; /* 40px → 4rem */
+    font-size: 2rem;
+    padding-bottom: 4rem;
   }
   .contacts p {
-    font-size: 1.8rem; /* 18px → 1.8rem */
-    padding-bottom: 1.5rem; /* 15px → 1.5rem */
+    font-size: 1.8rem;
+    padding-bottom: 1.5rem;
   }
 }
 @media (max-width: 420px) {
   .contacts .container {
-    height: 55.6rem; /* 556px → 55.6rem */
+    height: 55.6rem;
   }
   .contacts img {
-    width: 38rem; /* 380px → 38rem */
-    height: 24.8rem; /* 248px → 24.8rem */
+    width: 38rem;
+    height: 24.8rem;
   }
   .contacts .cards {
-    gap: 4rem; /* 40px → 4rem */
+    gap: 4rem;
   }
   .contacts h3 {
-    font-size: 1.6rem; /* 16px → 1.6rem */
+    font-size: 1.6rem;
   }
   .contacts p {
-    font-size: 1.6rem; /* 16px → 1.6rem */
+    font-size: 1.6rem;
   }
 }/*# sourceMappingURL=style.css.map */

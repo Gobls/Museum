@@ -4,6 +4,7 @@ html {
   display: flex;
   justify-content: center;
   font-size: 0.694444444vw;
+  overflow-x: hidden;
 
   @media (min-width: 1440px) {
     font-size: 10px;

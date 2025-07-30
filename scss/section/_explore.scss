@@ -53,4 +53,15 @@
             height: 705px;
         }
     }
+
+    @media(max-width:420px) {
+        .container {
+            height: 471px;
+        }
+
+        img {
+            width: 380px;
+            height: 368px;
+        }
+    }
 }

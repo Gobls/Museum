@@ -46,4 +46,32 @@
             width: 304px;
         }
     }
+
+    @media(max-width:768px) {
+        .container {
+            height: 768px;
+        }
+
+        .cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        img {
+            width: 352px;
+        }
+    }
+
+    @media(max-width:420px) {
+        .container {
+            height: 757px;
+        }
+
+        .cards{
+            gap: 24px;
+        }
+
+        img {
+            width: 178px;
+        }
+    }
 }

@@ -54,6 +54,13 @@ a {
   text-decoration: none;
 }
 
+picture,
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 .line {
   background: #710707;
   height: 3px;
@@ -142,16 +149,6 @@ a {
   margin: 0;
 }
 
-.parallax-section {
-  background-image: url("../assets/img/parallax.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  width: 100vw;
-}
-
 .btn:hover {
   background-color: #9d8665;
   transition: all 0.5s ease;
@@ -191,6 +188,16 @@ a {
   }
   .text1-none {
     display: none;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    width: 380px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 0.18em;
   }
 }
 .header a {
@@ -465,6 +472,25 @@ a {
     width: 280px;
   }
 }
+@media (max-width: 420px) {
+  .visiting .container {
+    height: 2073px;
+  }
+  .visiting .card {
+    width: 280px;
+    height: 295px;
+  }
+  .visiting .cards {
+    grid-template-columns: repeat(1, 280px);
+  }
+  .visiting h3 {
+    font-size: 18px;
+    letter-spacing: 0.28em;
+  }
+  .visiting p {
+    font-weight: 100;
+  }
+}
 
 .explore .container {
   height: 715px;
@@ -509,6 +535,15 @@ a {
     height: 705px;
   }
 }
+@media (max-width: 420px) {
+  .explore .container {
+    height: 471px;
+  }
+  .explore img {
+    width: 380px;
+    height: 368px;
+  }
+}
 
 .gallery .container {
   z-index: 10;
@@ -546,6 +581,28 @@ a {
   }
   .gallery img {
     width: 304px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery .container {
+    height: 768px;
+  }
+  .gallery .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery img {
+    width: 352px;
+  }
+}
+@media (max-width: 420px) {
+  .gallery .container {
+    height: 757px;
+  }
+  .gallery .cards {
+    gap: 24px;
+  }
+  .gallery img {
+    width: 178px;
   }
 }
 
@@ -620,6 +677,25 @@ a {
   }
   .video__slider__pagination {
     padding-top: 20px;
+  }
+  .video__none {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .video .container {
+    height: 475px;
+  }
+  .video__main video {
+    width: 380px;
+    height: 226px;
+  }
+  .video__slider {
+    width: 180px;
+    height: 101px;
+  }
+  .video__slider__pagination {
+    padding-top: 40px;
   }
   .video__none {
     display: none;
@@ -727,21 +803,74 @@ a {
     padding-bottom: 40px;
   }
 }
-
-.parallax {
-  width: 100%;
-  height: 400px;
+@media (max-width: 420px) {
+  .tickets .container {
+    height: 679px;
+  }
+  .tickets h3 {
+    font-size: 16px;
+    text-transform: none;
+    padding-bottom: 20px;
+  }
+  .tickets img {
+    width: 380px;
+    height: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tickets .cards {
+    flex-direction: column;
+  }
+  .tickets .black-outline-counter {
+    width: 167px;
+    height: 42px;
+  }
+  .tickets__right {
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .tickets__buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 15px;
+    padding-bottom: 20px;
+  }
+  .tickets__buy p {
+    font-size: 16px;
+    padding: 0;
+  }
+  .tickets__total {
+    padding-top: 20px;
+  }
+  .tickets__total h3 {
+    padding: 0;
+  }
+  .tickets__wrapper-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .tickets__wrapper-btn .btn {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 0%;
+    letter-spacing: 0.12em;
+  }
 }
-.parallax img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+
+.parallax-section {
+  background-image: url("../assets/img/parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100vw;
+  min-width: 1440px;
 }
 @media (max-width: 768px) {
-  .parallax {
+  .parallax-section {
     height: 300px;
   }
 }
@@ -804,5 +933,23 @@ a {
   .contacts p {
     font-size: 18px;
     padding-bottom: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .contacts .container {
+    height: 556px;
+  }
+  .contacts img {
+    width: 380px;
+    height: 248px;
+  }
+  .contacts .cards {
+    gap: 40px;
+  }
+  .contacts h3 {
+    font-size: 16px;
+  }
+  .contacts p {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

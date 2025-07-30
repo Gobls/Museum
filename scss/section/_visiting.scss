@@ -146,4 +146,28 @@
             }
         }
     }
+
+    @media(max-width: 420px) {
+        .container {
+            height: 2073px;
+        }
+
+        .card {
+            width: 280px;
+            height: 295px;
+        }
+
+        .cards {
+            grid-template-columns: repeat(1, 280px);
+        }
+
+        h3 {
+            font-size: 18px;
+            letter-spacing: 0.28em;
+        }
+
+        p {
+            font-weight: 100;
+        }
+    }
 }

@@ -54,6 +54,13 @@ a {
   text-decoration: none;
 }
 
+picture,
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 .line {
   background: $dark-red;
   height: 3px;
@@ -142,16 +149,6 @@ a {
   margin: 0;
 }
 
-.parallax-section {
-  background-image: url('../assets/img/parallax.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  width: 100vw;
-}
-
 .btn:hover {
   background-color: $font-gold;
   transition: all .5s ease;
@@ -198,5 +195,17 @@ a {
 
   .text1-none {
     display: none;
+  }
+}
+
+@media(max-width: 420px) {
+  .container {
+    width: 380px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 0.18em;
   }
 }

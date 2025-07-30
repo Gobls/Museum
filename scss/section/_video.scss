@@ -85,7 +85,33 @@
             }
         }
 
-        &__none{
+        &__none {
+            display: none;
+        }
+    }
+
+    @media(max-width:420px) {
+        .container {
+            height: 475px;
+        }
+
+        &__main {
+            video {
+                width: 380px;
+                height: 226px;
+            }
+        }
+
+        &__slider {
+            width: 180px;
+            height: 101px;
+
+            &__pagination {
+                padding-top: 40px;
+            }
+        }
+
+        &__none {
             display: none;
         }
     }

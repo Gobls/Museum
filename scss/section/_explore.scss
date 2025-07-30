@@ -1,34 +1,34 @@
 .explore {
     .container {
-        height: 715px;
+        height: 71.5rem; // 715px → 71.5rem
     }
 
     .cards {
-        gap: 20px;
+        gap: 2rem; // 20px → 2rem
     }
 
     &__text {
         p {
             color: $white;
             font-weight: 300;
-            font-size: 22px;
+            font-size: 2.2rem; // 22px → 2.2rem
             line-height: 175%;
-            padding-bottom: 25px;
+            padding-bottom: 2.5rem; // 25px → 2.5rem
         }
     }
 
-    @media(max-width:1024px) {
+    @media (max-width: 1024px) {
         .container {
-            height: 1029px;
+            height: 102.9rem; // 1029px → 102.9rem
         }
 
         .cards {
             flex-direction: column;
-            row-gap: 62px;
+            row-gap: 6.2rem; // 62px → 6.2rem
         }
 
         p {
-            font-size: 20px;
+            font-size: 2rem; // 20px → 2rem
             line-height: 192%;
             padding-bottom: 0;
         }
@@ -39,9 +39,9 @@
         }
     }
 
-    @media(max-width:768px) {
+    @media (max-width: 768px) {
         .container {
-            height: 828px;
+            height: 82.8rem; // 828px → 82.8rem
         }
 
         .cards {
@@ -49,19 +49,19 @@
         }
 
         img {
-            width: 728px;
-            height: 705px;
+            width: 72.8rem; // 728px → 72.8rem
+            height: 70.5rem; // 705px → 70.5rem
         }
     }
 
-    @media(max-width:420px) {
+    @media (max-width: 420px) {
         .container {
-            height: 471px;
+            height: 47.1rem; // 471px → 47.1rem
         }
 
         img {
-            width: 380px;
-            height: 368px;
+            width: 38rem; // 380px → 38rem
+            height: 36.8rem; // 368px → 36.8rem
         }
     }
 }

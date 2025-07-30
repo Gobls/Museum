@@ -2,7 +2,7 @@
     background: $white;
 
     .container {
-        height: 813px;
+        height: 81.3rem; /* 813px → 813/10 = 81.3rem */
     }
 
     h2 {
@@ -13,46 +13,46 @@
         font-family: "Roboto", sans-serif;
         text-transform: none;
         font-weight: 500;
-        font-size: 28px;
-        padding-bottom: 50px;
+        font-size: 2.8rem; /* 28px → 2.8rem */
+        padding-bottom: 5rem; /* 50px → 5rem */
     }
 
     p {
         font-weight: 300;
-        font-size: 22px;
-        padding-bottom: 25px;
+        font-size: 2.2rem; /* 22px → 2.2rem */
+        padding-bottom: 2.5rem; /* 25px → 2.5rem */
     }
 
     @media(max-width:1024px) {
         .container {
-            height: 614px;
+            height: 61.4rem; /* 614px → 61.4rem */
         }
 
         img {
-            width: 694px;
-            height: 454px;
+            width: 69.4rem; /* 694px → 69.4rem */
+            height: 45.4rem; /* 454px → 45.4rem */
             object-fit: cover;
         }
 
         h3 {
-            font-size: 24px;
-            padding-bottom: 35px;
+            font-size: 2.4rem; /* 24px → 2.4rem */
+            padding-bottom: 3.5rem; /* 35px → 3.5rem */
         }
 
         p {
-            font-size: 20px;
-            padding-bottom: 15px;
+            font-size: 2rem; /* 20px → 2rem */
+            padding-bottom: 1.5rem; /* 15px → 1.5rem */
         }
     }
 
     @media(max-width:768px) {
         .container {
-            height: 818px;
+            height: 81.8rem; /* 818px → 81.8rem */
         }
 
         img {
-            width: 728px;
-            height: 476px;
+            width: 72.8rem; /* 728px → 72.8rem */
+            height: 47.6rem; /* 476px → 47.6rem */
         }
 
         .cards {
@@ -60,36 +60,36 @@
         }
 
         h3 {
-            font-size: 20px;
-            padding-bottom: 40px;
+            font-size: 2rem; /* 20px → 2rem */
+            padding-bottom: 4rem; /* 40px → 4rem */
         }
 
         p {
-            font-size: 18px;
-            padding-bottom: 15px;
+            font-size: 1.8rem; /* 18px → 1.8rem */
+            padding-bottom: 1.5rem; /* 15px → 1.5rem */
         }
     }
 
     @media(max-width:420px) {
         .container {
-            height: 556px;
+            height: 55.6rem; /* 556px → 55.6rem */
         }
 
         img {
-            width: 380px;
-            height: 248px;
+            width: 38rem; /* 380px → 38rem */
+            height: 24.8rem; /* 248px → 24.8rem */
         }
 
-        .cards{
-            gap:40px;
+        .cards {
+            gap: 4rem; /* 40px → 4rem */
         }
 
         h3 {
-            font-size: 16px;
+            font-size: 1.6rem; /* 16px → 1.6rem */
         }
 
         p {
-            font-size: 16px;
+            font-size: 1.6rem; /* 16px → 1.6rem */
         }
     }
 }

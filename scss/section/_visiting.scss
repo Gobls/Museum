@@ -2,11 +2,11 @@
     background-color: $white;
 
     .container {
-        height: 1116px;
+        height: 111.6rem; /* 1116px → 111.6rem */
     }
 
     picture {
-        padding-bottom: 25px;
+        padding-bottom: 2.5rem; /* 25px → 2.5rem */
     }
 
     h2 {
@@ -15,14 +15,14 @@
 
     .cards {
         display: grid;
-        grid-template-columns: repeat(3, 440px);
-        column-gap: 60px;
-        row-gap: 75px;
+        grid-template-columns: repeat(3, 44rem); /* 440px → 44rem */
+        column-gap: 6rem; /* 60px → 6rem */
+        row-gap: 7.5rem; /* 75px → 7.5rem */
     }
 
     .card {
-        width: 440px;
-        height: 424px;
+        width: 44rem; /* 440px → 44rem */
+        height: 42.4rem; /* 424px → 42.4rem */
     }
 
     &__hover {
@@ -31,18 +31,18 @@
         position: relative;
 
         .line {
-            width: 300px;
-            height: 2px;
-            margin: 10px 0;
+            width: 30rem; /* 300px → 30rem */
+            height: 0.2rem; /* 2px → 0.2rem */
+            margin: 1rem 0; /* 10px → 1rem */
             transition: all 0.5s ease;
         }
 
         &:hover {
-            box-shadow: 10px 5px 5px $font-gold;
-            border-radius: 10px;
+            box-shadow: 1rem 0.5rem 0.5rem $font-gold; /* 10px → 1rem, 5px → 0.5rem */
+            border-radius: 1rem; /* 10px → 1rem */
 
             img {
-                border-radius: 10px;
+                border-radius: 1rem; /* 10px → 1rem */
             }
 
             .line {
@@ -64,45 +64,44 @@
 
     @media(max-width:1024px) {
         .container {
-            height: 1313px;
+            height: 131.3rem; /* 1313px → 131.3rem */
         }
 
         .cards {
-            grid-template-columns: repeat(2, 330px);
+            grid-template-columns: repeat(2, 33rem); /* 330px → 33rem */
             justify-content: center;
-            column-gap: 108px;
-            row-gap: 60px;
+            column-gap: 10.8rem; /* 108px → 10.8rem */
+            row-gap: 6rem; /* 60px → 6rem */
         }
 
         .card {
-            width: 330px;
-            height: 345px;
+            width: 33rem; /* 330px → 33rem */
+            height: 34.5rem; /* 345px → 34.5rem */
         }
 
         img {
-            width: 330px;
-            height: 215px;
+            width: 33rem; /* 330px → 33rem */
+            height: 21.5rem; /* 215px → 21.5rem */
         }
 
         h3 {
-            font-size: 28px;
+            font-size: 2.8rem; /* 28px → 2.8rem */
             letter-spacing: 0.11em;
         }
 
         p {
-            font-size: 20px;
+            font-size: 2rem; /* 20px → 2rem */
             font-weight: 100;
         }
 
-
         &__hover {
             .line {
-                width: 150px;
+                width: 15rem; /* 150px → 15rem */
             }
 
             &:hover {
                 .line {
-                    width: 330px;
+                    width: 33rem; /* 330px → 33rem */
                 }
             }
         }
@@ -110,38 +109,38 @@
 
     @media(max-width: 768px) {
         .container {
-            height: 1146px;
+            height: 114.6rem; /* 1146px → 114.6rem */
         }
 
         .card {
-            width: 280px;
-            height: 301px;
+            width: 28rem; /* 280px → 28rem */
+            height: 30.1rem; /* 301px → 30.1rem */
         }
 
         img {
-            width: 280px;
-            height: 180px;
+            width: 28rem; /* 280px → 28rem */
+            height: 18rem; /* 180px → 18rem */
         }
 
         .cards {
-            column-gap: 56px;
-            row-gap: 40px;
+            column-gap: 5.6rem; /* 56px → 5.6rem */
+            row-gap: 4rem; /* 40px → 4rem */
         }
 
         h3 {
-            font-size: 22px;
+            font-size: 2.2rem; /* 22px → 2.2rem */
             letter-spacing: 0.14em;
         }
 
         p {
-            font-size: 16px;
+            font-size: 1.6rem; /* 16px → 1.6rem */
             font-weight: 200;
         }
 
         &__hover {
             &:hover {
                 .line {
-                    width: 280px;
+                    width: 28rem; /* 280px → 28rem */
                 }
             }
         }
@@ -149,20 +148,20 @@
 
     @media(max-width: 420px) {
         .container {
-            height: 2073px;
+            height: 207.3rem; /* 2073px → 207.3rem */
         }
 
         .card {
-            width: 280px;
-            height: 295px;
+            width: 28rem; /* 280px → 28rem */
+            height: 29.5rem; /* 295px → 29.5rem */
         }
 
         .cards {
-            grid-template-columns: repeat(1, 280px);
+            grid-template-columns: repeat(1, 28rem); /* 280px → 28rem */
         }
 
         h3 {
-            font-size: 18px;
+            font-size: 1.8rem; /* 18px → 1.8rem */
             letter-spacing: 0.28em;
         }
 

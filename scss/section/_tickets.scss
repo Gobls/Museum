@@ -2,11 +2,11 @@
     background: $white;
 
     .container {
-        height: 743px;
+        height: 74.3rem; /* 743px → 74.3rem */
         position: relative;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
-        font-size: 22px;
+        font-size: 2.2rem; /* 22px → 2.2rem */
     }
 
     .cards {
@@ -19,28 +19,27 @@
 
     h3 {
         font-family: "Roboto", sans-serif;
-        ;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 2.8rem; /* 28px → 2.8rem */
         color: #000;
         letter-spacing: 0.06em;
-        padding-bottom: 25px;
+        padding-bottom: 2.5rem; /* 25px → 2.5rem */
     }
 
     p {
         font-weight: 300;
-        font-size: 22px;
-        padding-left: 23px;
+        font-size: 2.2rem; /* 22px → 2.2rem */
+        padding-left: 2.3rem; /* 23px → 2.3rem */
     }
 
     &__radio {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 2.5rem; /* 25px → 2.5rem */
 
         &-btn {
             display: flex;
-            gap: 25px;
+            gap: 2.5rem; /* 25px → 2.5rem */
         }
 
         input[type="radio"] {
@@ -51,19 +50,19 @@
     }
 
     &__buy {
-        padding-bottom: 10px;
+        padding-bottom: 1rem; /* 10px → 1rem */
 
         p {
             padding-left: 0;
-            padding-bottom: 15px;
+            padding-bottom: 1.5rem; /* 15px → 1.5rem */
         }
 
-        padding-left: 25px
+        padding-left: 2.5rem; /* 25px → 2.5rem */
     }
 
     &__total {
-        padding-top: 40px;
-        padding-bottom: 60px;
+        padding-top: 4rem; /* 40px → 4rem */
+        padding-bottom: 6rem; /* 60px → 6rem */
 
         h3 {
             text-transform: none;
@@ -71,9 +70,9 @@
     }
 
     &__btn {
-        border-radius: 2px;
-        width: 175px;
-        height: 50px;
+        border-radius: 0.2rem; /* 2px → 0.2rem */
+        width: 17.5rem; /* 175px → 17.5rem */
+        height: 5rem; /* 50px → 5rem */
         background: black;
         display: flex;
         justify-content: center;
@@ -85,8 +84,8 @@
     }
 
     &__center {
-        padding-left: 60px;
-        padding-right: 235px;
+        padding-left: 6rem; /* 60px → 6rem */
+        padding-right: 23.5rem; /* 235px → 23.5rem */
     }
 
     &__right {
@@ -96,45 +95,45 @@
 
     @media(max-width:1024px) {
         .container {
-            height: 598px;
+            height: 59.8rem; /* 598px → 59.8rem */
         }
 
         img {
-            width: 700px;
-            height: 440px;
+            width: 70rem; /* 700px → 70rem */
+            height: 44rem; /* 440px → 44rem */
             object-fit: cover;
         }
     }
 
     @media(max-width:768px) {
         .container {
-            height: 553px;
+            height: 55.3rem; /* 553px → 55.3rem */
         }
 
         img {
-            width: 444px;
-            height: 340px;
+            width: 44.4rem; /* 444px → 44.4rem */
+            height: 34rem; /* 340px → 34rem */
         }
 
         &__total {
-            padding-bottom: 40px;
+            padding-bottom: 4rem; /* 40px → 4rem */
         }
     }
 
     @media(max-width:420px) {
         .container {
-            height: 679px;
+            height: 67.9rem; /* 679px → 67.9rem */
         }
 
         h3 {
-            font-size: 16px;
+            font-size: 1.6rem; /* 16px → 1.6rem */
             text-transform: none;
-            padding-bottom: 20px;
+            padding-bottom: 2rem; /* 20px → 2rem */
         }
 
         img {
-            width: 380px;
-            height: 160px;
+            width: 38rem; /* 380px → 38rem */
+            height: 16rem; /* 160px → 16rem */
             object-fit: cover;
         }
 
@@ -142,14 +141,14 @@
             flex-direction: column;
         }
 
-        .black-outline-counter{
-            width: 167px;
-            height: 42px;
+        .black-outline-counter {
+            width: 16.7rem; /* 167px → 16.7rem */
+            height: 4.2rem; /* 42px → 4.2rem */
         }
 
         &__right {
             justify-content: center;
-            padding-top: 40px;
+            padding-top: 4rem; /* 40px → 4rem */
         }
 
         &__buy {
@@ -157,17 +156,17 @@
             flex-direction: column;
             align-items: center;
             padding: 0;
-            gap: 15px;
-            padding-bottom: 20px;
+            gap: 1.5rem; /* 15px → 1.5rem */
+            padding-bottom: 2rem; /* 20px → 2rem */
 
             p {
-                font-size: 16px;
+                font-size: 1.6rem; /* 16px → 1.6rem */
                 padding: 0;
             }
         }
 
         &__total {
-            padding-top: 20px;
+            padding-top: 2rem; /* 20px → 2rem */
 
             h3 {
                 padding: 0;
@@ -180,7 +179,7 @@
 
             .btn {
                 font-weight: 300;
-                font-size: 16px;
+                font-size: 1.6rem; /* 16px → 1.6rem */
                 line-height: 0%;
                 letter-spacing: 0.12em;
             }

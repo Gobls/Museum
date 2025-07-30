@@ -1,6 +1,6 @@
 .welcome {
     .container {
-        height: 810px;
+        height: 81rem; /* 810px → 81rem */
         background-image:
             linear-gradient(to right,
                 rgba(0, 0, 0, 1) 40%,
@@ -15,8 +15,8 @@
 
     &__btn {
         display: flex;
-        width: 360px;
-        height: 75px;
+        width: 36rem; /* 360px → 36rem */
+        height: 7.5rem; /* 75px → 7.5rem */
         justify-content: center;
         align-items: center;
     }
@@ -24,25 +24,25 @@
     &__title {
         font-family: "Forum", sans-serif;
         font-weight: 400;
-        font-size: 80px;
+        font-size: 8rem; /* 80px → 8rem */
         line-height: 112%;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $white;
-        padding-bottom: 25px;
-        padding-top: 150px;
+        padding-bottom: 2.5rem; /* 25px → 2.5rem */
+        padding-top: 15rem; /* 150px → 15rem */
     }
 
     &__text {
         font-family: "Roboto", sans-serif;
         font-weight: 300;
-        font-size: 28px;
+        font-size: 2.8rem; /* 28px → 2.8rem */
         letter-spacing: 0.07em;
         color: $white;
-        padding-bottom: 75px;
+        padding-bottom: 7.5rem; /* 75px → 7.5rem */
     }
 
-    &__slider{
+    &__slider {
         position: absolute;
         right: 0;
         bottom: 0;

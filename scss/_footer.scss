@@ -1,6 +1,6 @@
 .footer {
     .container {
-        height: 392px;
+        height: 39.2rem; /* 392px / 10 */
         padding: 0;
     }
 
@@ -10,42 +10,41 @@
         transform: translateX(-50%);
         width: 100vw;
         background: #666;
-        width: 100vw;
         margin: 0;
     }
 
     p {
         font-family: "Roboto", sans-serif;
         font-weight: 100;
-        font-size: 22px;
+        font-size: 2.2rem; /* 22px / 10 */
         line-height: 100%;
         letter-spacing: 0.09em;
         color: #fff;
     }
 
     .cards {
-        padding: 50px 0px;
+        padding: 5rem 0; /* 50px / 10 */
         justify-content: left;
     }
 
     &__menu {
         display: flex;
-        gap: 150px;
+        gap: 15rem; /* 150px / 10 */
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 2.5rem; /* 25px / 10 */
         margin: 0;
-        padding-top: 25px;
+        padding-top: 2.5rem; /* 25px / 10 */
         padding-left: 0;
 
         li {
             a {
                 font-family: "Roboto", sans-serif;
                 font-weight: 100;
-                font-size: 22px;
+                font-size: 2.2rem; /* 22px / 10 */
                 letter-spacing: 0.09em;
                 color: $white;
             }
@@ -53,17 +52,17 @@
     }
 
     &__logo {
-        padding-top: 25px;
-        padding-right: 145px;
+        padding-top: 2.5rem; /* 25px / 10 */
+        padding-right: 14.5rem; /* 145px / 10 */
         display: flex;
-        gap: 25px;
+        gap: 2.5rem; /* 25px / 10 */
     }
 
     &__icons {
         display: flex;
         align-items: flex-end;
-        gap: 25px;
-        padding-left: 397px;
+        gap: 2.5rem; /* 25px / 10 */
+        padding-left: 39.7rem; /* 397px / 10 */
 
         img {
             cursor: pointer;
@@ -73,50 +72,50 @@
     &__down {
         justify-content: space-between;
         display: flex;
-        padding-top: 50px;
+        padding-top: 5rem; /* 50px / 10 */
     }
 
     @media(max-width:1024px) {
         .container {
-            height: 368px;
+            height: 36.8rem; /* 368px / 10 */
         }
 
         &__logo {
-            padding-right: 45px;
+            padding-right: 4.5rem; /* 45px / 10 */
         }
 
         &__menu {
-            gap: 100px;
+            gap: 10rem; /* 100px / 10 */
         }
 
         &__icons {
-            padding-left: 92px;
+            padding-left: 9.2rem; /* 92px / 10 */
         }
     }
 
     @media(max-width:768px) {
         .container {
-            height: 411px;
+            height: 41.1rem; /* 411px / 10 */
         }
 
         &__logo {
-            padding-right: 80px;
+            padding-right: 8rem; /* 80px / 10 */
         }
 
         &__menu {
-            gap: 185px;
+            gap: 18.5rem; /* 185px / 10 */
         }
     }
 
     @media(max-width:420px) {
         .container {
-            height: 400px;
+            height: 40rem; /* 400px / 10 */
         }
 
         .cards {
             flex-direction: column;
-            gap: 40px;
-            padding: 40px 0px;
+            gap: 4rem; /* 40px / 10 */
+            padding: 4rem 0; /* 40px / 10 */
         }
 
         &__logo {
@@ -127,14 +126,14 @@
             padding: 0;
             align-items: center;
             justify-content: center;
-            gap: 5px;
+            gap: 0.5rem; /* 5px / 10 */
         }
 
         &__list {
             li {
                 a {
                     font-weight: 100;
-                    font-size: 16px;
+                    font-size: 1.6rem; /* 16px / 10 */
                     letter-spacing: 0.12em;
                 }
             }

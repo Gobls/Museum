@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: $dark-bg;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -94,7 +95,7 @@ video {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 144rem;
   margin: 0 auto;
   padding: clamp(4rem, 5vw, 7.5rem) 0;

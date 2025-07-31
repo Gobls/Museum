@@ -581,6 +581,10 @@ video {
     display: flex;
     justify-content: center;
   }
+  .explore picture img {
+    height: 70rem;
+    width: 72rem;
+  }
 }
 @media (max-width: 768px) {
   .explore .container {

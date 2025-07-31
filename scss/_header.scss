@@ -2,23 +2,23 @@
     a {
         color: $white;
     }
-    
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 15rem; /* 150px → 15rem */
+        height: 15rem;
         padding: 0;
     }
 
     &__list {
         display: flex;
-        gap: 5.5rem; /* 55px → 5.5rem */
-        
+        gap: 5.5rem;
+
         li {
             a {
                 font-family: "Roboto", sans-serif;
-                font-size: 2rem; /* 20px → 2rem */
+                font-size: 2rem;
                 font-weight: 200;
                 letter-spacing: 0.09em;
             }
@@ -27,6 +27,24 @@
 
     &__logo {
         display: flex;
-        gap: 2.5rem; /* 25px → 2.5rem */
+        gap: 2.5rem;
+    }
+
+    @media (max-width: 1024px) {
+        .container {
+            height: 13rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            height: 11rem;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .container {
+            height: 9rem;
+        }
     }
 }

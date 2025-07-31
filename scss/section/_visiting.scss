@@ -2,11 +2,11 @@
     background-color: $white;
 
     .container {
-        height: 111.6rem; /* 1116px → 111.6rem */
+        height: 111.6rem;
     }
 
     picture {
-        padding-bottom: 2.5rem; /* 25px → 2.5rem */
+        padding-bottom: 2.5rem;
     }
 
     h2 {
@@ -15,14 +15,14 @@
 
     .cards {
         display: grid;
-        grid-template-columns: repeat(3, 44rem); /* 440px → 44rem */
-        column-gap: 6rem; /* 60px → 6rem */
-        row-gap: 7.5rem; /* 75px → 7.5rem */
+        grid-template-columns: repeat(3, 44rem);
+        column-gap: 6rem;
+        row-gap: 7.5rem;
     }
 
     .card {
-        width: 44rem; /* 440px → 44rem */
-        height: 42.4rem; /* 424px → 42.4rem */
+        width: 44rem;
+        height: 42.4rem;
     }
 
     &__hover {
@@ -31,18 +31,18 @@
         position: relative;
 
         .line {
-            width: 30rem; /* 300px → 30rem */
-            height: 0.2rem; /* 2px → 0.2rem */
-            margin: 1rem 0; /* 10px → 1rem */
+            width: 30rem;
+            height: 0.2rem;
+            margin: 1rem 0;
             transition: all 0.5s ease;
         }
 
         &:hover {
-            box-shadow: 1rem 0.5rem 0.5rem $font-gold; /* 10px → 1rem, 5px → 0.5rem */
-            border-radius: 1rem; /* 10px → 1rem */
+            box-shadow: 1rem 0.5rem 0.5rem $font-gold;
+            border-radius: 1rem;
 
             img {
-                border-radius: 1rem; /* 10px → 1rem */
+                border-radius: 1rem;
             }
 
             .line {
@@ -64,44 +64,44 @@
 
     @media(max-width:1024px) {
         .container {
-            height: 131.3rem; /* 1313px → 131.3rem */
+            height: 131.3rem;
         }
 
         .cards {
-            grid-template-columns: repeat(2, 33rem); /* 330px → 33rem */
-            justify-content: center;
-            column-gap: 10.8rem; /* 108px → 10.8rem */
-            row-gap: 6rem; /* 60px → 6rem */
+            grid-template-columns: repeat(2, 33rem);
+            column-gap: 10.8rem;
+            row-gap: 6rem;
+            padding: 0 10.8rem;
         }
 
         .card {
-            width: 33rem; /* 330px → 33rem */
-            height: 34.5rem; /* 345px → 34.5rem */
+            width: 33rem;
+            height: 34.5rem;
         }
 
         img {
-            width: 33rem; /* 330px → 33rem */
-            height: 21.5rem; /* 215px → 21.5rem */
+            width: 33rem;
+            height: 21.5rem;
         }
 
         h3 {
-            font-size: 2.8rem; /* 28px → 2.8rem */
+            font-size: 2.8rem;
             letter-spacing: 0.11em;
         }
 
         p {
-            font-size: 2rem; /* 20px → 2rem */
+            font-size: 2rem;
             font-weight: 100;
         }
 
         &__hover {
             .line {
-                width: 15rem; /* 150px → 15rem */
+                width: 15rem;
             }
 
             &:hover {
                 .line {
-                    width: 33rem; /* 330px → 33rem */
+                    width: 33rem;
                 }
             }
         }
@@ -109,38 +109,40 @@
 
     @media(max-width: 768px) {
         .container {
-            height: 114.6rem; /* 1146px → 114.6rem */
+            height: 114.6rem;
         }
 
         .card {
-            width: 28rem; /* 280px → 28rem */
-            height: 30.1rem; /* 301px → 30.1rem */
+            width: 28rem;
+            height: 30.1rem;
         }
 
         img {
-            width: 28rem; /* 280px → 28rem */
-            height: 18rem; /* 180px → 18rem */
+            width: 28rem;
+            height: 18rem;
         }
 
         .cards {
-            column-gap: 5.6rem; /* 56px → 5.6rem */
-            row-gap: 4rem; /* 40px → 4rem */
+            grid-template-columns: repeat(2, 28rem);
+            column-gap: 5.6rem;
+            row-gap: 4rem;
+            padding: 0 5.6rem;
         }
 
         h3 {
-            font-size: 2.2rem; /* 22px → 2.2rem */
+            font-size: 2.2rem;
             letter-spacing: 0.14em;
         }
 
         p {
-            font-size: 1.6rem; /* 16px → 1.6rem */
+            font-size: 1.6rem;
             font-weight: 200;
         }
 
         &__hover {
             &:hover {
                 .line {
-                    width: 28rem; /* 280px → 28rem */
+                    width: 28rem;
                 }
             }
         }
@@ -148,20 +150,20 @@
 
     @media(max-width: 420px) {
         .container {
-            height: 207.3rem; /* 2073px → 207.3rem */
+            height: 207.3rem;
         }
 
         .card {
-            width: 28rem; /* 280px → 28rem */
-            height: 29.5rem; /* 295px → 29.5rem */
+            width: 28rem;
+            height: 29.5rem;
         }
 
         .cards {
-            grid-template-columns: repeat(1, 28rem); /* 280px → 28rem */
+            grid-template-columns: repeat(1, 28rem);
         }
 
         h3 {
-            font-size: 1.8rem; /* 18px → 1.8rem */
+            font-size: 1.8rem;
             letter-spacing: 0.28em;
         }
 
